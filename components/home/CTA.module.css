@@ -1,0 +1,29 @@
+.container {
+  padding: 34px;
+  background-image: url('/assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.building {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0rem;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 82px;
+  font-size: 28px;
+  font-weight: 800;
+  border-radius: 20px;
+  color: var(--white);
+  background-color: var(--purple);
+}
