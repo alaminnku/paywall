@@ -1,0 +1,38 @@
+.container {
+  padding: 20px;
+}
+
+.login {
+  font-size: 18px;
+  color: var(--navy_blue);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container h1 {
+  font-size: 30px;
+  color: var(--navy_blue);
+  margin-bottom: 2rem;
+}
+
+.login a {
+  color: var(--purple);
+}
+
+.money {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.username {
+  font-size: 32px;
+  color: var(--navy_blue);
+  text-align: center;
+}
+
+.cta {
+  color: var(--navy_blue);
+  font-size: 19px;
+  text-align: center;
+}

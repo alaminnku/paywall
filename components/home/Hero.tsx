@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import heroBackground from '@public/assets/hero-bg.png';
-import Header from '@components/layout/Header';
+import Header from './Header';
 import styles from '@components/home/Hero.module.css';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
