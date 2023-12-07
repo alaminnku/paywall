@@ -6,6 +6,7 @@ import { featureCards, featureLists } from 'data/home';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google';
+import FeatureCards from './FeatureCards';
 
 const pjs = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -38,14 +39,7 @@ export default function Features() {
         alt='Phone showing subscription options'
       />
 
-      <div className={`${styles.cards} ${inter.className}`}>
-        {featureCards.map(({ icon, text }, index) => (
-          <div key={index} className={styles.card}>
-            <span>{icon}</span>
-            <p>{text}</p>
-          </div>
-        ))}
-      </div>
+      <FeatureCards />
 
       <div className={`${styles.feature_card} ${inter.className}`}>
         <p className={styles.title}>Start Any One-Person Business</p>
