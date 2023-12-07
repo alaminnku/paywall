@@ -1,0 +1,51 @@
+.container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta_and_menu {
+  display: flex;
+  align-items: center;
+}
+
+.cta_and_menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  width: 100px;
+  height: 48px;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-weight: 500;
+  background-color: var(--black);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line1,
+.line2 {
+  height: 2px;
+  width: 24px;
+  background-color: var(--black);
+  transition: all 0.25s ease-in-out;
+}
+
+.line1 {
+  margin-bottom: 8px;
+}
+
+.menu.open .line1 {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+.menu.open .line2 {
+  transform: translateY(-5px) rotate(45deg);
+}
