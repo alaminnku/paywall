@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@components/layout/MobileNav.module.css';
-import blackLogo from '@public/layout/logo-black.png';
+import logo from '@public/layout/logo-black.png';
 import { Dispatch, SetStateAction } from 'react';
 
 type Props = {
@@ -14,7 +14,7 @@ export default function MobileNav({ isOpen, setIsOpen }: Props) {
 
   return (
     <nav className={styles.container}>
-      <Image className={styles.logo} src={blackLogo} alt='Paywall logo' />
+      <Image className={styles.logo} src={logo} alt='Paywall logo' />
 
       <div className={styles.cta_and_menu}>
         <Link href='/login'>Get Started</Link>

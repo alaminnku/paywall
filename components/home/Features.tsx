@@ -5,13 +5,24 @@ import styles from '@components/home/Features.module.css';
 import { featureCards, featureLists } from 'data/home';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
+import { Plus_Jakarta_Sans, Inter } from 'next/font/google';
+
+const pjs = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['600', '800'],
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['500', '700'],
+});
 
 export default function Features() {
   return (
     <section className={styles.container}>
       <Image className={styles.block} src={block} alt='Block image' />
 
-      <h2>
+      <h2 className={pjs.className}>
         The Fast-Track To Passive Income Is On The Other Side Of The Wall 💰
       </h2>
 
@@ -27,7 +38,7 @@ export default function Features() {
         alt='Phone showing subscription options'
       />
 
-      <div className={styles.cards}>
+      <div className={`${styles.cards} ${inter.className}`}>
         {featureCards.map(({ icon, text }, index) => (
           <div key={index} className={styles.card}>
             <Image src={icon} alt='Card icon' width={100} height={100} />
@@ -36,7 +47,7 @@ export default function Features() {
         ))}
       </div>
 
-      <div className={styles.feature_card}>
+      <div className={`${styles.feature_card} ${inter.className}`}>
         <p className={styles.title}>Start Any One-Person Business</p>
 
         <div>
@@ -78,7 +89,7 @@ export default function Features() {
         </div>
       </div>
 
-      <Link href='/' className={styles.cta}>
+      <Link href='/' className={`${styles.cta} ${pjs.className}`}>
         Start My Trial <FaArrowRight />
       </Link>
     </section>

@@ -1,3 +1,75 @@
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+    url('/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+    url('/fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+    url('/fonts/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    url('/fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk';
+  src: url('/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+    url('/fonts/ClashGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk';
+  src: url('/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+    url('/fonts/ClashGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk';
+  src: url('/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+    url('/fonts/ClashGrotesk-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk';
+  src: url('/fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+    url('/fonts/ClashGrotesk-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: fallback;
+  font-style: normal;
+}
+
 :root {
   --gray: #d6d6d6;
   --black: #000000;
@@ -22,6 +94,7 @@ html {
   color: var(--black);
   margin: 0 auto;
   text-rendering: optimizeLegibility;
+  font-family: 'ClashDisplay', sans-serif;
 }
 
 body {

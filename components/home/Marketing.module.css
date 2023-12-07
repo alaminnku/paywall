@@ -3,6 +3,10 @@
   background-color: var(--white);
 }
 
+.container p {
+  color: var(--navy_blue);
+}
+
 .color {
   position: relative;
   height: 194px;
@@ -30,6 +34,7 @@
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 1rem;
+  color: var(--navy_blue);
 }
 
 .phones {

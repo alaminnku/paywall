@@ -5,6 +5,12 @@ import styles from '@components/home/Hero.module.css';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import phone from '@public/assets/phone.png';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+const pjs = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+});
 
 export default function Hero() {
   return (
@@ -25,7 +31,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <Link className={styles.cta} href='/'>
+      <Link className={`${styles.cta} ${pjs.className}`} href='/'>
         Get started <FaArrowRight />
       </Link>
 

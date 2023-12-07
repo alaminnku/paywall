@@ -3,6 +3,7 @@
   background-image: url('/assets/hero-bg.png');
   background-size: cover;
   background-position: center;
+  color: var(--navy_blue);
 }
 
 .container h2 {

@@ -2,10 +2,16 @@ import styles from '@components/layout/Footer.module.css';
 import Link from 'next/link';
 import logo from '@public/layout/logo-black.png';
 import Image from 'next/image';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+const pjs = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
+    <footer className={`${styles.container} ${pjs.className}`}>
       <ul>
         <li>
           <Link href='/'>Sign In</Link>

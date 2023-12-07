@@ -13,14 +13,18 @@
 .container h2 {
   text-align: center;
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 600;
+  color: var(--navy_blue);
   margin-bottom: 28px;
+  font-weight: 800;
 }
 
 .description {
   font-size: 20px;
   text-align: center;
   margin-bottom: 41px;
+  color: var(--navy_blue);
+  font-family: 'ClashGrotesk', sans-serif;
 }
 
 .phone {
@@ -52,6 +56,7 @@
 
 .card p {
   font-size: 13px;
+  font-weight: 500;
 }
 
 .feature_card {
@@ -121,6 +126,7 @@
   background-color: var(--purple);
   border-radius: 20px;
   height: 60px;
+  font-weight: 600;
   padding: 0px 20px;
   color: var(--white);
 }

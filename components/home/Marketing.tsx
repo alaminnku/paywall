@@ -3,10 +3,16 @@ import brick from '@public/assets/brick.png';
 import Image from 'next/image';
 import phones from '@public/assets/phones.png';
 import upload from '@public/assets/upload.png';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+const pjs = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600', '800'],
+});
 
 export default function Marketing() {
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} ${pjs.className}`}>
       <div className={styles.color}>
         <Image className={styles.brick} src={brick} alt='Brick image' />
       </div>
