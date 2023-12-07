@@ -1,0 +1,50 @@
+.container {
+  padding: 32px 0px;
+  background-color: var(--white);
+}
+
+.color {
+  position: relative;
+  height: 194px;
+  width: 60%;
+  background-color: #d9efff;
+  margin-bottom: 2rem;
+}
+
+.brick {
+  top: 50%;
+  right: -40%;
+  translate: 0% -50%;
+  width: 11rem;
+  height: auto;
+  position: absolute;
+}
+
+.content,
+.content3 {
+  padding-left: 32px;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.phones {
+  width: 100%;
+  height: auto;
+  padding-left: 1rem;
+}
+
+.content2 {
+  text-align: right;
+  padding: 32px;
+}
+
+.upload {
+  width: 100%;
+  height: auto;
+  padding-right: 1rem;
+}
