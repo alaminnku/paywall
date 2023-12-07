@@ -1,0 +1,21 @@
+.container {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.container ul li a {
+  color: var(--navy_blue);
+}
+
+.container ul li {
+  padding: 0.25rem;
+}
+
+.container ul {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+}
