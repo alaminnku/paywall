@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  margin-bottom: 4rem;
+}
+
+.block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 28px;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.phone {
+  width: 70%;
+  height: auto;
+  align-self: center;
+  margin-bottom: 53px;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 48px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 22px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 23px;
+  height: auto;
+  margin-bottom: 9px;
+}
+
+.card p {
+  font-size: 13px;
+}
+
+.feature_card {
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 49px;
+  background-color: var(--white);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list,
+.summary,
+.total {
+  padding: 0.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+}
+
+.detail img {
+  width: 1rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.detail p,
+.price {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.summary p {
+  color: var(--gray);
+  text-decoration: line-through;
+}
+
+.summary .price {
+  color: red;
+}
+
+.total p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--purple);
+  border-radius: 20px;
+  height: 60px;
+  padding: 0px 20px;
+  color: var(--white);
+}

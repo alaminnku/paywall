@@ -1,10 +1,10 @@
-import { cards } from 'data/cards';
+import { generalCards } from 'data/home';
 import Card from './Card';
 
 export default function Cards() {
   return (
-    <section style={{ marginBottom: '2rem' }}>
-      {cards.map((card) => (
+    <section>
+      {generalCards.map((card) => (
         <Card {...card} />
       ))}
     </section>

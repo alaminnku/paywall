@@ -1,12 +1,13 @@
 import Cards from '@components/home/Cards';
+import Features from '@components/home/Features';
 import Hero from '@components/home/Hero';
-import Header from '@components/layout/Header';
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Cards />
+      <Features />
     </main>
   );
 }
