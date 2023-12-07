@@ -41,7 +41,7 @@ export default function Features() {
       <div className={`${styles.cards} ${inter.className}`}>
         {featureCards.map(({ icon, text }, index) => (
           <div key={index} className={styles.card}>
-            <Image src={icon} alt='Card icon' width={100} height={100} />
+            <span>{icon}</span>
             <p>{text}</p>
           </div>
         ))}
@@ -54,7 +54,7 @@ export default function Features() {
           {featureLists.map(({ icon, text, price }, index) => (
             <div className={styles.list} key={index}>
               <div className={styles.detail}>
-                <Image src={icon} alt='Icon' width={40} height={40} />
+                <span>{icon}</span>
                 <p>{text}</p>
               </div>
               <p className={styles.price}>{price}</p>
@@ -64,12 +64,7 @@ export default function Features() {
 
         <div className={styles.summary}>
           <div className={styles.detail}>
-            <Image
-              src='/icons/cross.png'
-              alt='Cross icon'
-              width={40}
-              height={40}
-            />
+            <span>❌</span>
             <p>What you'd spend otherwise</p>
           </div>
           <p className={styles.price}>$240/mo</p>
@@ -77,12 +72,7 @@ export default function Features() {
 
         <div className={styles.total}>
           <div className={styles.detail}>
-            <Image
-              src='/icons/brick.png'
-              alt='Brick icon'
-              width={40}
-              height={40}
-            />
+            <span>🧱</span>
             <p>Build your Paywall</p>
           </div>
           <p>$19.99/mo</p>

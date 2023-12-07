@@ -23,21 +23,21 @@ export const generalCards = [
 ];
 
 export const featureCards = [
-  { icon: '/icons/stars.png', text: 'Branded landing page' },
-  { icon: '/icons/tools.png', text: 'Simple page builder' },
-  { icon: '/icons/phone.png', text: 'Optimized for phones' },
-  { icon: '/icons/magnet.png', text: 'Sticky buy button' },
-  { icon: '/icons/cart.png', text: 'Pop-up checkout' },
-  { icon: '/icons/money.png', text: 'Designed to boost sales' },
+  { icon: '✨', text: 'Branded landing page' },
+  { icon: '🛠️', text: 'Simple page builder' },
+  { icon: '📱', text: 'Optimized for phones' },
+  { icon: '🧲', text: 'Sticky buy button' },
+  { icon: '🛒', text: 'Pop-up checkout' },
+  { icon: '💰', text: 'Designed to boost sales' },
 ];
 
 export const featureLists = [
-  { icon: '/icons/hat.png', text: 'Course builder', price: '$29' },
-  { icon: '/icons/book.png', text: 'E-book/info product store', price: '$29' },
-  { icon: '/icons/mail.png', text: 'Email list builder', price: '$29' },
-  { icon: '/icons/bag.png', text: 'One-person agency', price: '$29' },
-  { icon: '/icons/color.png', text: 'Freelancer portfolio', price: '$29' },
-  { icon: '/icons/laptop.png', text: 'Software business', price: '$29' },
-  { icon: '/icons/camera.png', text: 'Content creator platform', price: '$29' },
-  { icon: '/icons/gift.png', text: 'Productized service', price: '$29' },
+  { icon: '🎓', text: 'Course builder', price: '$29' },
+  { icon: '📖', text: 'E-book/info product store', price: '$29' },
+  { icon: '💌', text: 'Email list builder', price: '$29' },
+  { icon: '💼', text: 'One-person agency', price: '$29' },
+  { icon: '🎨', text: 'Freelancer portfolio', price: '$29' },
+  { icon: '💻', text: 'Software business', price: '$29' },
+  { icon: '📸', text: 'Content creator platform', price: '$29' },
+  { icon: '🎁', text: 'Productized service', price: '$29' },
 ];

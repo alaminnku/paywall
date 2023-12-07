@@ -48,10 +48,8 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-  width: 23px;
-  height: auto;
-  margin-bottom: 9px;
+.card span {
+  font-size: 1.5rem;
 }
 
 .card p {
@@ -93,9 +91,8 @@
   align-items: center;
 }
 
-.detail img {
-  width: 1rem;
-  height: auto;
+.detail span {
+  font-size: 1.5rem;
   margin-right: 0.5rem;
 }
 
