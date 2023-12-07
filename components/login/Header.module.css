@@ -1,0 +1,17 @@
+.container {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  color: #131f60;
+}
