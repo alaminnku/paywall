@@ -1,20 +1,165 @@
 .container {
-  padding: 20px 0px;
-  margin: 20px;
+  padding: 20px;
+}
+
+.user_info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.container input {
+.user_info input {
   margin-bottom: 1rem;
   background-color: #f9f9ff;
   padding: 1.25rem 1rem;
   border-radius: 8px;
+  font-family: 'Inter', sans-serif;
 }
 
 .container input::placeholder {
   color: #808eb6;
   font-size: 16px;
+}
+
+.subscriptions {
+  margin-bottom: 2rem;
+}
+
+.annual,
+.monthly {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #b5c2d5;
+  font-weight: 700;
+  justify-content: space-between;
+  border: 2px solid #b5c2d5;
+}
+
+.annual {
+  margin-bottom: 1rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+}
+
+.option input {
+  margin-right: 1rem;
+}
+
+.price p {
+  font-size: 22px;
+}
+
+.price .invalid {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.monthly {
+  color: var(--purple);
+  border: 2px solid var(--purple);
+}
+
+.monthly .price {
+  color: #00106d;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.payment label {
+  margin-bottom: 1rem;
+  color: #131f60;
+}
+
+.card,
+.expiry,
+.ccv {
+  padding: 1.25rem;
+  border: 1px solid #9bacc8;
+  font-family: 'Inter', sans-serif;
+}
+
+.card {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.expiry,
+.ccv {
+  width: 50%;
+  border-top: none;
+}
+
+.expiry {
+  border-right: none;
+  border-radius: 0px 0px 0px 5px;
+}
+
+.ccv {
+  border-radius: 0px 0px 5px 0px;
+}
+
+.stripe {
+  color: #48638c;
+}
+
+.stripe span {
+  font-weight: 800;
+}
+
+.agreement {
+  display: flex;
+  font-size: 12px;
+  color: #131f60;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.agreement input {
+  margin-top: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.agreement a {
+  color: var(--purple);
+}
+
+.button {
+  height: 50px;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  background-color: #b5bcff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  padding: 0rem 1.75rem;
+  margin: 1rem 0rem;
+  color: #8f9cb9;
+  font-size: 12px;
+  border-right: 1px solid #8f9cb9;
+}
+
+.nav a:last-child {
+  border-right: none;
 }
