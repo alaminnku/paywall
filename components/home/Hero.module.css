@@ -1,0 +1,47 @@
+.container {
+  padding: 30px;
+  background-image: url('/assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.description p {
+  font-size: 25px;
+}
+
+.description p:first-child {
+  margin-bottom: 1rem;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  border-radius: 10px;
+  height: 64px;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 3rem;
+  color: var(--navy_blue);
+  border: 1px solid var(--black);
+  box-shadow: 4px 4px var(--black);
+}
+
+.cta svg {
+  margin-left: 1rem;
+}
+
+.phone {
+  width: 100%;
+  height: auto;
+}

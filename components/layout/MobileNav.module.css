@@ -1,8 +1,12 @@
 .container {
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
 }
 
 .cta_and_menu {

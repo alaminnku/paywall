@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@components/layout/MobileNav.module.css';
 import blackLogo from '@public/layout/logo-black.png';
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 
 type Props = {
   isOpen: boolean;
@@ -10,12 +10,11 @@ type Props = {
 };
 
 export default function MobileNav({ isOpen, setIsOpen }: Props) {
-  const closeMobileMenu = () => setIsOpen(false);
   const toggleMobileMenu = () => setIsOpen(!isOpen);
 
   return (
     <nav className={styles.container}>
-      <Image src={blackLogo} alt='Paywall logo' />
+      <Image className={styles.logo} src={blackLogo} alt='Paywall logo' />
 
       <div className={styles.cta_and_menu}>
         <Link href='/login'>Get Started</Link>
