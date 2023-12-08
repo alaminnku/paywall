@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className={`${styles.container} ${pjs.className}`}>
       <ul>
         <li>
-          <Link href='/'>Sign In</Link>
+          <Link href='/login'>Sign In</Link>
         </li>
         <li>
           <Link href='/'>Support</Link>
@@ -30,7 +30,9 @@ export default function Footer() {
         </li>
       </ul>
 
-      <Image className={styles.logo} src={logo} alt='Paywall logo' />
+      <Link href='/' className={styles.logo}>
+        <Image src={logo} alt='Paywall logo' />
+      </Link>
     </footer>
   );
 }

@@ -25,7 +25,7 @@ export default function CTA() {
           alt='Image showing money and building block'
         />
 
-        <Link className={styles.cta} href='/'>
+        <Link className={styles.cta} href='/register'>
           Try For 14 Days Free
         </Link>
       </section>
@@ -39,7 +39,7 @@ export default function CTA() {
             do it.
           </p>
 
-          <Link className={styles.cta} href='/'>
+          <Link className={styles.cta} href='/register'>
             Try For 14 Days Free
           </Link>
         </div>

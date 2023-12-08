@@ -3,6 +3,7 @@ import styles from './Header.module.css';
 import logo from '@public/layout/logo-black.png';
 import { Inter } from 'next/font/google';
 import Navigation from '@components/layout/Navigation';
+import Link from 'next/link';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -13,7 +14,9 @@ export default function header() {
   return (
     <header className={`${styles.container} ${inter.className}`}>
       <nav>
-        <Image className={styles.logo} src={logo} alt='Paywall logo' />
+        <Link href='/' className={styles.logo}>
+          <Image src={logo} alt='Paywall logo' />
+        </Link>
 
         <Navigation />
       </nav>

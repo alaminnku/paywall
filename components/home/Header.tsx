@@ -34,11 +34,9 @@ export default function Header() {
       }`}
     >
       <nav>
-        <Image
-          className={styles.logo}
-          src={isScrolled ? logoWhite : logoBlack}
-          alt='Paywall logo'
-        />
+        <Link href='/' className={styles.logo}>
+          <Image src={isScrolled ? logoWhite : logoBlack} alt='Paywall logo' />
+        </Link>
 
         <div className={styles.cta_and_menu}>
           <Link className={styles.login} href='/login'>

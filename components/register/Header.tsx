@@ -14,7 +14,9 @@ export default function Header() {
   return (
     <header className={`${styles.container} ${inter.className}`}>
       <nav>
-        <Image className={styles.logo} src={logo} alt='Paywall logo' />
+        <Link href='/' className={styles.logo}>
+          <Image src={logo} alt='Paywall logo' />
+        </Link>
 
         <Navigation />
       </nav>

@@ -32,7 +32,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <Link className={`${styles.cta} ${pjs.className}`} href='/'>
+          <Link className={`${styles.cta} ${pjs.className}`} href='/register'>
             Get started <FaArrowRight />
           </Link>
         </div>

@@ -74,7 +74,7 @@ export default function Features() {
           </div>
         </div>
 
-        <Link href='/' className={`${styles.cta} ${pjs.className}`}>
+        <Link href='/register' className={`${styles.cta} ${pjs.className}`}>
           Start My Trial <FaArrowRight />
         </Link>
       </section>
@@ -138,7 +138,7 @@ export default function Features() {
             </div>
           </div>
 
-          <Link href='/' className={`${styles.cta} ${pjs.className}`}>
+          <Link href='/register' className={`${styles.cta} ${pjs.className}`}>
             Start My Trial <FaArrowRight />
           </Link>
         </div>

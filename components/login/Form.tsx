@@ -22,7 +22,7 @@ export default function Form() {
 
       <p className={styles.register}>
         Don't have an account?{' '}
-        <Link className={styles.forgot_password} href='/'>
+        <Link className={styles.forgot_password} href='/register'>
           Register
         </Link>
       </p>

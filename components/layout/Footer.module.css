@@ -15,6 +15,10 @@
 }
 
 .logo {
+  display: flex;
+}
+
+.logo img {
   width: 8rem;
   height: auto;
 }
