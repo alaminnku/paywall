@@ -64,6 +64,7 @@
   }
 
   .content h1 {
+    font-size: 86px;
     margin-bottom: 2rem;
   }
 
@@ -73,5 +74,11 @@
 
   .phone {
     width: 40%;
+  }
+
+  .cta {
+    height: 80px;
+    font-size: 35px;
+    width: 65%;
   }
 }

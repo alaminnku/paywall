@@ -4,6 +4,7 @@
   z-index: 111;
   padding: 30px;
   width: 100%;
+  max-width: 1920px;
 }
 
 .scrolled {
@@ -31,6 +32,7 @@
   display: none;
   color: var(--black);
   margin-right: 1rem;
+  font-weight: 700;
 }
 
 .register {
@@ -44,7 +46,6 @@
   margin-right: 20px;
   font-weight: 500;
   background-color: var(--black);
-  font-family: 'ClashGrotesk', sans-serif;
 }
 
 .scrolled .register {

@@ -93,6 +93,7 @@ html {
   font-weight: 400;
   color: var(--black);
   margin: 0 auto;
+  max-width: 1920px;
   text-rendering: optimizeLegibility;
   font-family: 'ClashDisplay', sans-serif;
 }

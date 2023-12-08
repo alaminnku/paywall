@@ -4,6 +4,12 @@ import { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 import logoBlack from '@public/layout/logo-black.png';
 import logoWhite from '@public/layout/logo-white.png';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+const pjs = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['700'],
+});
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +28,11 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`${styles.container} ${isScrolled && styles.scrolled}`}>
+    <header
+      className={`${styles.container} ${isScrolled && styles.scrolled} ${
+        pjs.className
+      }`}
+    >
       <nav>
         <Image
           className={styles.logo}
