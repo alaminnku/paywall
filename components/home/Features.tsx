@@ -2,7 +2,7 @@ import Image from 'next/image';
 import block from '@public/assets/block.png';
 import phone from '@public/assets/phone-straight.png';
 import styles from '@components/home/Features.module.css';
-import { featureCards, featureLists } from 'data/home';
+import { featureLists } from 'data/home';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google';

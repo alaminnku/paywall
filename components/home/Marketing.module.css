@@ -74,6 +74,16 @@
     display: block;
   }
 
+  .title,
+  .desktop_title {
+    font-size: 44px;
+  }
+
+  .description,
+  .desktop_description {
+    font-size: 18px;
+  }
+
   .content_and_image {
     display: flex;
     align-items: center;
