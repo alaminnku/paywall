@@ -3,6 +3,7 @@
   top: 0;
   z-index: 111;
   padding: 30px;
+  width: 100%;
 }
 
 .scrolled {
@@ -26,7 +27,13 @@
   align-items: center;
 }
 
-.cta_and_menu a {
+.login {
+  display: none;
+  color: var(--black);
+  margin-right: 1rem;
+}
+
+.register {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,9 +47,13 @@
   font-family: 'ClashGrotesk', sans-serif;
 }
 
-.scrolled .cta_and_menu a {
+.scrolled .register {
   color: var(--black);
   background-color: var(--white);
+}
+
+.scrolled .login {
+  color: var(--white);
 }
 
 .menu {
@@ -75,4 +86,22 @@
 
 .menu.open .line2 {
   transform: translateY(-5px) rotate(45deg);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 20%;
+  }
+
+  .login {
+    display: block;
+  }
+
+  .register {
+    margin-right: 0px;
+  }
+
+  .menu {
+    display: none;
+  }
 }

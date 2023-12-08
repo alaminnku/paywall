@@ -31,7 +31,12 @@ export default function Header() {
         />
 
         <div className={styles.cta_and_menu}>
-          <Link href='/login'>Get Started</Link>
+          <Link className={styles.login} href='/login'>
+            Login
+          </Link>
+          <Link className={styles.register} href='/register'>
+            Get Started
+          </Link>
           <div
             className={`${styles.menu} ${isOpen && styles.open}`}
             onClick={toggleMobileMenu}
