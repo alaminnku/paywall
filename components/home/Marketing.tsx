@@ -13,51 +13,68 @@ const pjs = Plus_Jakarta_Sans({
 export default function Marketing() {
   return (
     <section className={`${styles.container} ${pjs.className}`}>
-      <div className={styles.color}>
+      <h2>
+        Why Everyone Is Using <br /> Paywall
+      </h2>
+
+      <div className={styles.content_and_image}>
         <Image className={styles.brick} src={brick} alt='Brick image' />
+
+        <div className={styles.content}>
+          <p className={styles.mobile_title}>
+            Financial Freedom Is On The Other Side Of The Wall
+          </p>
+          <p className={styles.mobile_description}>
+            Paywall’s all-in-one integrations shortcuts your workflow by
+            allowing you to build and monetize an online business the quickest
+            way. Build it like lego bricks with access to all the tools you need
+            in our simple page editor.
+          </p>
+
+          <p className={styles.desktop_title}>Fully Featured Integrations</p>
+          <p className={styles.desktop_description}>
+            Stan's Integrations can help you to superpower your workflow by
+            connecting your existing third-party tools.
+          </p>
+        </div>
       </div>
 
-      <div className={styles.content}>
-        <p className={styles.title}>
-          Financial Freedom Is On The Other Side Of The Wall
-        </p>
+      <div className={styles.content_and_image}>
+        <Image
+          className={styles.phones}
+          src={phones}
+          alt='Phones with green background'
+        />
 
-        <p>
-          Paywall’s all-in-one integrations shortcuts your workflow by allowing
-          you to build and monetize an online business the quickest way. Build
-          it like lego bricks with access to all the tools you need in our
-          simple page editor.
-        </p>
+        <div className={styles.content2}>
+          <p className={styles.title}>One Tap Checkout</p>
+          <p className={styles.description}>
+            You shouldn’t have to go through hurdles just to sell your product.
+            Paywall brings the entire checkout process into your own hands.
+          </p>
+        </div>
       </div>
 
-      <Image
-        className={styles.phones}
-        src={phones}
-        alt='Phones with green background'
-      />
+      <div className={styles.content_and_image}>
+        <Image
+          className={styles.upload}
+          src={upload}
+          alt='iPhone showing upload button'
+        />
 
-      <div className={styles.content2}>
-        <p className={styles.title}>One Tap Checkout</p>
-
-        <p>
-          You shouldn’t have to go through hurdles just to sell your product.
-          Paywall brings the entire checkout process into your own hands.
-        </p>
-      </div>
-
-      <Image
-        className={styles.upload}
-        src={upload}
-        alt='iPhone showing upload button'
-      />
-
-      <div className={styles.content3}>
-        <p className={styles.title}>No Coding Required</p>
-        <p>
-          Unlock the potential of digital products. Get started today and launch
-          a Paywall – the digital monetization solution for creators of all
-          sizes.
-        </p>
+        <div className={styles.content3}>
+          <p className={styles.title}>No Coding Required</p>
+          <p className={styles.mobile_description}>
+            Unlock the potential of digital products. Get started today and
+            launch a Paywall – the digital monetization solution for creators of
+            all sizes.
+          </p>
+          <p className={styles.desktop_description}>
+            Stan is super easy to use for beginners, and you really don’t need
+            any coding experience to get started. We think even a caveman could
+            do it.
+          </p>
+        </div>
       </div>
     </section>
   );
