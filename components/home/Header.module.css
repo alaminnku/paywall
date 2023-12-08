@@ -1,7 +1,18 @@
 .container {
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  padding: 30px;
+}
+
+.scrolled {
+  padding: 12px 30px;
+  background-color: var(--black);
+}
+
+.container nav {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
   justify-content: space-between;
 }
 
@@ -29,6 +40,11 @@
   font-family: 'ClashGrotesk', sans-serif;
 }
 
+.scrolled .cta_and_menu a {
+  color: var(--black);
+  background-color: var(--white);
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -42,6 +58,11 @@
   width: 24px;
   background-color: var(--black);
   transition: all 0.25s ease-in-out;
+}
+
+.scrolled .line1,
+.scrolled .line2 {
+  background-color: var(--white);
 }
 
 .line1 {

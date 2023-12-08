@@ -1,17 +1,34 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Header.module.css';
-import logo from '@public/layout/logo-black.png';
+import logoBlack from '@public/layout/logo-black.png';
+import logoWhite from '@public/layout/logo-white.png';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMobileMenu = () => setIsOpen(!isOpen);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header>
-      <nav className={styles.container}>
-        <Image className={styles.logo} src={logo} alt='Paywall logo' />
+    <header className={`${styles.container} ${isScrolled && styles.scrolled}`}>
+      <nav>
+        <Image
+          className={styles.logo}
+          src={isScrolled ? logoWhite : logoBlack}
+          alt='Paywall logo'
+        />
 
         <div className={styles.cta_and_menu}>
           <Link href='/login'>Get Started</Link>

@@ -1,8 +1,11 @@
 .container {
-  padding: 30px;
   background-image: url('/assets/hero-bg.png');
   background-size: cover;
   background-position: center;
+}
+
+.content {
+  padding: 8rem 30px 30px 30px;
 }
 
 .container h1 {

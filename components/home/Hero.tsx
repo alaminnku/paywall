@@ -16,29 +16,31 @@ export default function Hero() {
     <section className={styles.container}>
       <Header />
 
-      <h1>Meet Paywall Your All·in·One Digital Product Store</h1>
+      <div className={styles.content}>
+        <h1>Meet Paywall Your All·in·One Digital Product Store</h1>
 
-      <div className={styles.description}>
-        <p>
-          The fastest way to turn your knowledge, passions, and experience into
-          profit.
-        </p>
+        <div className={styles.description}>
+          <p>
+            The fastest way to turn your knowledge, passions, and experience
+            into profit.
+          </p>
 
-        <p>
-          — Monetize digital files and create internet businesses with simple
-          paywalls.
-        </p>
+          <p>
+            — Monetize digital files and create internet businesses with simple
+            paywalls.
+          </p>
+        </div>
+
+        <Link className={`${styles.cta} ${pjs.className}`} href='/'>
+          Get started <FaArrowRight />
+        </Link>
+
+        <Image
+          className={styles.phone}
+          src={phone}
+          alt='iPhone showing subscription options'
+        />
       </div>
-
-      <Link className={`${styles.cta} ${pjs.className}`} href='/'>
-        Get started <FaArrowRight />
-      </Link>
-
-      <Image
-        className={styles.phone}
-        src={phone}
-        alt='iPhone showing subscription options'
-      />
     </section>
   );
 }
