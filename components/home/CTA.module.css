@@ -1,4 +1,5 @@
-.container {
+.mobile_container,
+.desktop_container {
   padding: 34px;
   background-image: url('/assets/hero-bg.png');
   background-size: cover;
@@ -7,7 +8,11 @@
   margin-bottom: 2rem;
 }
 
-.container h2 {
+.desktop_container {
+  display: none;
+}
+
+.content h2 {
   font-size: 28px;
   font-weight: 800;
 }
@@ -28,4 +33,39 @@
   border-radius: 20px;
   color: var(--white);
   background-color: var(--purple);
+}
+
+@media (min-width: 768px) {
+  .mobile_container {
+    display: none;
+  }
+
+  .desktop_container {
+    padding: 34px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 30%;
+  }
+
+  .content h2 {
+    font-size: 45px;
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+
+  .building {
+    width: 35%;
+  }
+
+  .cta {
+    font-size: 24px;
+  }
 }

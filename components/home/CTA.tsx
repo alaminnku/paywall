@@ -11,21 +11,45 @@ const pjs = Plus_Jakarta_Sans({
 
 export default function CTA() {
   return (
-    <section className={`${styles.container} ${pjs.className}`}>
-      <h2>Build Wealth With Paywall</h2>
-      <p>
-        Stan is super easy to use for beginners, and you really don’t need any
-        coding experience to get started. We think even a caveman could do it.
-      </p>
-      <Image
-        className={styles.building}
-        src={building}
-        alt='Image showing money and building block'
-      />
+    <>
+      <section className={`${styles.mobile_container} ${pjs.className}`}>
+        <h2>Build Wealth With Paywall</h2>
+        <p>
+          Stan is super easy to use for beginners, and you really don’t need any
+          coding experience to get started. We think even a caveman could do it.
+        </p>
 
-      <Link className={styles.cta} href='/'>
-        Try For 14 Days Free
-      </Link>
-    </section>
+        <Image
+          className={styles.building}
+          src={building}
+          alt='Image showing money and building block'
+        />
+
+        <Link className={styles.cta} href='/'>
+          Try For 14 Days Free
+        </Link>
+      </section>
+
+      <section className={`${styles.desktop_container} ${pjs.className}`}>
+        <div className={styles.content}>
+          <h2>Build Wealth With Paywall</h2>
+          <p>
+            Stan is super easy to use for beginners, and you really don’t need
+            any coding experience to get started. We think even a caveman could
+            do it.
+          </p>
+
+          <Link className={styles.cta} href='/'>
+            Try For 14 Days Free
+          </Link>
+        </div>
+
+        <Image
+          className={styles.building}
+          src={building}
+          alt='Image showing money and building block'
+        />
+      </section>
+    </>
   );
 }
