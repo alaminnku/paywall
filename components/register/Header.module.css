@@ -18,3 +18,15 @@
 .login a {
   color: var(--purple);
 }
+
+@media (min-width: 768px) {
+  .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-bottom: 0rem;
+  }
+}
