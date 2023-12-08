@@ -1,11 +1,21 @@
 import Image from 'next/image';
 import logo from '@public/layout/logo-black.png';
 import styles from '@components/register/Header.module.css';
+import Link from 'next/link';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 export default function Header() {
   return (
-    <header className={styles.container}>
+    <header className={`${styles.container} ${inter.className}`}>
       <Image className={styles.logo} src={logo} alt='Paywall logo' />
+      <p className={styles.login}>
+        Already have an account? <Link href='/login'>Login</Link>
+      </p>
     </header>
   );
 }

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './CTA.module.css';
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import Image from 'next/image';
@@ -17,10 +16,6 @@ const pjs = Plus_Jakarta_Sans({
 export default function CTA() {
   return (
     <section className={`${styles.container} ${inter.className}`}>
-      <p className={styles.login}>
-        Already have an account? <Link href='/login'>Login</Link>
-      </p>
-
       <h1>Start From Scratch Get Your Bag 💰💸🚀</h1>
 
       <Image

@@ -1,8 +1,20 @@
 .container {
+  margin-bottom: 2rem;
   padding: 30px 30px 0px 30px;
 }
 
 .logo {
   width: 40%;
   height: auto;
+  margin-bottom: 1rem;
+}
+
+.login {
+  font-size: 18px;
+  color: var(--navy_blue);
+  text-align: center;
+}
+
+.login a {
+  color: var(--purple);
 }
