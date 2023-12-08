@@ -15,3 +15,16 @@
 .cta {
   color: #131f60;
 }
+
+@media (min-width: 768px) {
+  .container nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-bottom: 0rem;
+  }
+}
