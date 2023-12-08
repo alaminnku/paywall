@@ -163,3 +163,10 @@
 .nav a:last-child {
   border-right: none;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 40%;
+    margin: 0 auto;
+  }
+}

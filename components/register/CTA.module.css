@@ -25,3 +25,10 @@
   font-size: 19px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
