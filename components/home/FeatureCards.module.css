@@ -20,3 +20,13 @@
   font-size: 13px;
   font-weight: 500;
 }
+
+@media (min-width: 768px) {
+  .card span {
+    font-size: 60px;
+  }
+
+  .card p {
+    font-size: 30px;
+  }
+}
