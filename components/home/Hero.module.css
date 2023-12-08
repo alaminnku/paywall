@@ -4,11 +4,11 @@
   background-position: center;
 }
 
-.content {
+.content_and_image {
   padding: 8rem 30px 30px 30px;
 }
 
-.container h1 {
+.content h1 {
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -49,4 +49,29 @@
 .phone {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .content_and_image {
+    padding: 8rem 4rem 4rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .content h1 {
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .phone {
+    width: 40%;
+  }
 }
