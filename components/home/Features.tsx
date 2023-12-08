@@ -90,7 +90,7 @@ export default function Features() {
             <Image className={styles.block} src={block} alt='Block image' />
 
             <p className={styles.description}>
-              Don’t spend days trying to make internet money . Use the shortcut
+              Don't spend days trying to make internet money . Use the shortcut
               that was built to turn visitors into paying customers! Paywall
               does it all for you.
             </p>
