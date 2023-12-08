@@ -18,3 +18,17 @@
   width: 40%;
   height: auto;
 }
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+}
