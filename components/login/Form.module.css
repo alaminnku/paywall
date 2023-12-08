@@ -41,3 +41,10 @@
   font-weight: 600;
   text-decoration: underline;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
