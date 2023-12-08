@@ -1,19 +1,18 @@
 .container {
   padding: 20px;
   border-radius: 20px;
-  margin-bottom: 0.5rem;
 }
 
 .container img {
   margin-bottom: 25px;
 }
 
-.container h2 {
+.title {
   font-size: 35px;
   font-weight: 500;
 }
 
-.container p {
+.description {
   font-size: 25px;
   font-family: 'ClashGrotesk', sans-serif;
 }

@@ -12,8 +12,8 @@ export default function Card({ icon, background, title, description }: Prop) {
   return (
     <div style={{ backgroundColor: background }} className={styles.container}>
       <Image src={icon} alt='Card icon' width={100} height={109} />
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <p className={styles.title}>{title}</p>
+      <p className={styles.description}>{description}</p>
     </div>
   );
 }
